@@ -1,0 +1,44 @@
+{
+  "name": "your-links",
+  "version": "1.0.0",
+  "description": "Master Electron Course Code",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "watch": "nodemon --exec electron .",
+    "reset": "git reset --hard"
+  },
+  "repository": "https://github.com/lucaseto/electron",
+  "keywords": [
+    "Electron",
+    "Master Electron",
+    "demo"
+  ],
+  "author": "Juan Pablo M",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^9.0.0",
+    "nodemon": "^2.0.0"
+  },
+  "dependencies": {
+    "electron-window-state": "^5.0.3"
+  },
+  "build": {
+    "appId": "com.juan.your-links",
+    "copyright": "juan test",
+    "win": {
+      "icon": "build/icon.ico",
+      "category":"public.app-category.productivity",
+      "target":"zip"
+    },
+    "linux": {
+      "icon": "build/icon.png" ,
+      "category":"utility"
+    },
+    "mac": {
+      "icon": "build/icon.icns" ,
+      "category":"public.app-category.productivity",
+      "target":"dmg"
+    }
+  }
+}
